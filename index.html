@@ -134,13 +134,14 @@
     max-width: 780px;
   }
   h1.name .accent{ color: var(--red); }
-  .hero-sub{
+  .hero-sub, .section-next{
     font-family: var(--font-mono); font-size: 13.5px; color: var(--muted);
     margin-top: 26px; display:inline-flex; align-items:center; gap:10px;
     cursor: pointer; transition: color .15s ease;
   }
-  .hero-sub:hover{ color: var(--text); }
-  .hero-sub .arrowdown{ display:inline-block; animation: bob 1.8s ease-in-out infinite; }
+  .section-next{ font-size: 13px; margin-top: 44px; }
+  .hero-sub:hover, .section-next:hover{ color: var(--text); }
+  .hero-sub .arrowdown, .section-next .arrowdown{ display:inline-block; animation: bob 1.8s ease-in-out infinite; }
   @keyframes bob{ 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(4px);} }
 
   .signal{
@@ -258,7 +259,7 @@
 <div class="bg-glow" aria-hidden="true"><i class="g1"></i><i class="g2"></i><i class="g3"></i></div>
 <div class="scanline" aria-hidden="true"></div>
 
-<nav>
+<nav id="top">
   <div class="wrap">
     <div class="brand">
       <div class="avatar">GB</div>
@@ -299,6 +300,7 @@
       <div class="tag">AI-based Applications</div>
       <div class="tag">Firebase</div>
     </div>
+    <a href="#about" class="section-next"><span class="arrowdown">↓</span> Scroll / Tap</a>
   </div>
 </section>
 
@@ -316,6 +318,7 @@
         <div class="stat"><b>1</b><span>Product Shipped</span></div>
       </div>
     </div>
+    <a href="#spec" class="section-next"><span class="arrowdown">↓</span> Scroll / Tap</a>
   </div>
 </section>
 
@@ -345,6 +348,7 @@
         <div class="spec-grid-row"><div class="value">Web Technologies</div><div class="bar"><i style="width:64%"></i></div></div>
       </div>
     </div>
+    <a href="#work" class="section-next"><span class="arrowdown">↓</span> Scroll / Tap</a>
   </div>
 </section>
 
@@ -373,6 +377,7 @@
     </div>
 
     <div class="next-build"><span class="d"></span>NEXT BUILD IN PROGRESS — MORE PROJECTS COMING SOON</div>
+    <a href="#contact" class="section-next"><span class="arrowdown">↓</span> Scroll / Tap</a>
   </div>
 </section>
 
@@ -386,6 +391,7 @@
         <a href="https://instagram.com/_itz__saran_" target="_blank" rel="noopener"><span class="arrow">→</span>@_itz__saran_</a>
       </div>
     </div>
+    <a href="#top" class="section-next"><span class="arrowdown">↑</span> Back to Top</a>
   </div>
 </section>
 
