@@ -124,13 +124,6 @@
 
   /* ---------- HERO ---------- */
   header.hero{ padding: 110px 0 100px; position:relative; }
-  .boot-line{
-    font-family: var(--font-mono); font-size: 12px; color: var(--green);
-    letter-spacing: 0.06em; margin-bottom: 22px; min-height: 16px;
-    display:flex; align-items:center; gap:8px;
-  }
-  .boot-line .cursor{ display:inline-block; width:6px; height:13px; background: var(--green); animation: caret 1s steps(1) infinite; }
-  @keyframes caret{ 50%{ opacity:0; } }
 
   .hero-name-reveal{
     font-family: var(--font-display); font-weight: 700;
@@ -312,7 +305,7 @@
   <div class="wrap">
     <div class="brand">
       <div class="avatar">GB</div>
-      <div class="brand-text">GUHASARAN B<br><span class="sub">Student Series</span></div>
+      <div class="brand-text">GUHASARAN B<br><span class="sub">Developer Series</span></div>
     </div>
     <div class="navlinks">
       <span class="pill hide-mobile"><span class="d"></span>Portfolio</span>
@@ -324,7 +317,6 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="boot-line"><span id="bootText"></span><span class="cursor"></span></div>
     <h1 class="hero-name-reveal" id="heroNameReveal" aria-label="Guhasaran B"></h1>
     <div class="eyebrow">AI &amp; Data Science Student</div>
     <h2 class="name">Building at the edge of <span class="accent">code &amp; safety.</span></h2>
@@ -440,10 +432,9 @@
       <h2 class="sec-title big-close">Let's build something <span class="accent">amazing.</span></h2>
       <p class="close-sub">Always open to a good problem, a hackathon idea, or a project worth shipping.</p>
     </div>
-    <div class="contact-grid">
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/guha-saran-04b254407" target="_blank" rel="noopener"><span class="arrow">→</span>linkedin.com/in/guha-saran-04b254407</a>
-        <a href="https://instagram.com/_itz__saran_" target="_blank" rel="noopener"><span class="arrow">→</span>@_itz__saran_</a>
+    <div class="contact-grid" style="justify-content:center; text-align:center;">
+      <div class="contact-links" style="align-items:center;">
+        <a href="mailto:guhasaran07@gmail.com" style="font-size:18px;"><span class="arrow">→</span>guhasaran07@gmail.com</a>
       </div>
     </div>
     <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="section-next"><span class="arrowdown">↑</span> Back to Top</a>
@@ -458,17 +449,6 @@
 </footer>
 
 <script>
-  // boot line typewriter
-  (function(){
-    const line = "// INITIALIZING PROFILE... ACCESS GRANTED";
-    const el = document.getElementById('bootText');
-    let i = 0;
-    function type(){
-      if(i <= line.length){ el.textContent = line.slice(0,i); i++; setTimeout(type, 22); }
-    }
-    type();
-  })();
-
   // hero name letter-by-letter reveal
   (function(){
     const target = document.getElementById('heroNameReveal');
